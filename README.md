@@ -10,8 +10,19 @@ Materials management component for a smart construction dashboard
 
 * Docker
 * Docker Compose
+* Yarn (https://yarnpkg.com/)
 
 ### Setup Development Environment
+
+* Clone repo
+```
+git clone https://github.com/lukemckinstry/ern-demo.git
+```
+
+* Install frontend packages (note: temporary workaround)
+```
+cd ern-demo/frontend && yarn install
+```
 
 * Build containers 
 ```
@@ -31,12 +42,6 @@ Materials management component for a smart construction dashboard
 ./scripts/update
 ```
 
-* Run backend server unit tests
-
-```
-./scripts/test-api
-```
-
 ### STRTA
 
 This project uses [`scripts-to-rule-them-all`](https://github.com/azavea/architecture/blob/master/doc/arch/adr-0000-scripts-to-rule-them-all.md) to bootstrap, test, and maintain projects consistently across all teams. Below is a quick explanation for the specific usage of each script.
@@ -45,5 +50,4 @@ This project uses [`scripts-to-rule-them-all`](https://github.com/azavea/archite
 | ----------- | ---------------------------------------------------------- |
 | `server`    | Start the development servers for the server and client on ports 3204 and 4000                        |
 | `setup`     | Setup the project development environment                  |
-| `test`      | Run backend server unit tests                                      |
 | `update`    | Update project, rebuild containers                   |

@@ -1,0 +1,97 @@
+.page-container {
+  padding: 40px;
+  background-color: #282c34;
+  min-height: 100vh;
+}
+
+.container-header {
+  min-height: 10vh;
+
+}
+
+.container-header-upper {
+  font-size: 48px;
+  color: white;
+  font-weight: 500;
+}
+
+.container-header-lower {
+  margin: 30px 0;
+}
+
+.outer-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.material-left-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.material-value-display {
+  padding: 8px 0;
+  color: white;
+  font-size: 18px;
+}
+
+.material-list-container {
+  width: 30vw;
+  border: 2px;
+  border-style: solid;
+  border-color: #505050;
+  border-radius: 2px;
+  background-color: #1d1f24;
+  height: 50vh;
+  overflow: scroll;
+  margin-right: 30px;
+}
+
+.material-list-item-container {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #505050;
+  padding: 4px;
+}
+
+.material-list-item-container-left {
+  padding: 4px;
+}
+
+.material-list-item-container-right {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.material-detail-container {
+  background-color: #1d1f24;
+  height: 50vh;
+  width: 50vw;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.material-detail-form-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.material-detail-form-section {
+  width: 50%;
+}
+
+.material-detail-form-label {
+  color: white;
+  padding: 6px 0;
+}
+
+.color-picker-main {
+  display: flex;
+  flex-direction: row;
+}
+
+.color-picker-right {
+  height: 100%;
+  color: white;
+}
