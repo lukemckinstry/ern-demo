@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  api:
+    build: ./api
+    volumes:
+      - ./api:/app
+    ports:
+      - '4000:4000'
+    command: yarn dev
+  client:
+    build: ./frontend
+    volumes:
+      - ./frontend:/usr/local/src
+    working_dir: /usr/local/src
+    ports:
+      - 3204:3000
+    command: yarn start
+    
