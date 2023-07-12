@@ -4,9 +4,13 @@ import { Materials } from "./datastore/materials";
 
 export const datastore = new Materials();
 
-export const app: Express = express();
+export const get = () => {
+    const app: Express = express();
 
-app.use(express.json());
+    app.use(express.json());
 
-// routes
-app.use("/api", routes);
+    // routes
+    app.use("/api", routes);
+
+    return app
+}

@@ -41,6 +41,11 @@ cd ern-demo/frontend && yarn install
 ```
 ./scripts/update
 ```
+* Run tests (backend server)
+```
+./scripts/test
+```
+
 
 ### STRTA
 
@@ -51,3 +56,4 @@ This project uses [`scripts-to-rule-them-all`](https://github.com/azavea/archite
 | `server`    | Start the development servers for the server and client on ports 3204 and 4000                        |
 | `setup`     | Setup the project development environment                  |
 | `update`    | Update project, rebuild containers                   |
+| `test`    | Run tests, backend api server unit tests                   |
